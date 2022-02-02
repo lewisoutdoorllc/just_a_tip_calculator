@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #C4E0E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+.left {
+    width: 350px;
+    height: 100%;
+    background-color:  yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.bill {
+    width: 100%;
+    height: 50px;
+    /* background-color: green; */
+}
+
+.input_container {
+    display: flex;
+    align-items: center;
+    background-color: #F6F7FC;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input_container input {
+    background: none;
+    border: none;
+    outline: none;
+    text-align: end;
+    width: 100%;
+}
+
+.tip {
+    width: 100%;
+    height: 150px;
+    background-color: beige;
+}
+
+.people {
+    width: 100%;
+    height: 50px;
+    /* background-color: orange; */
+}
+
+
+
+.right {
+    width: 350px;
+    height: 100%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* * {
+    margin:0;
+    padding:0;
+}
+
+body {
+    width:100%;
+    height:100vh;
+    background-color:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container {
+
+    width:800px;
+    height:400px;
+    display:flex;                                     
+}
+
+.left {
+    background-color:yellow;
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.bill {
+width:100%;
+height:50px;
+
+}
+
+.input_container {
+    display:flex;
+    background-color:#f6f7fc;
+    align-items: center;
+    height:30px;
+}
+
+.input_container input {
+    background: none;
+    border: none;
+    outline: none;
+    text-align: end;
+    width: 100%;
+}
+
+.tip {
+width:100%;
+height:150px;
+background-color:beige;
+}
+
+.people {
+margin: 10px;
+}
+
+.right {
+    background-color:green;
+    width:50%;
+    height:100%;
+    background-color: hsl(183, 100%, 15%);
+
+}
+
+
+
+.tip_amount {
+    width:100%;
+    height:50px;
+    background-color:hsl(183, 100%, 15%);
+    display:flex;
+    border:none;
+    background-color:none;
+}
+
+.total {
+    width:100%;
+    height:50px;
+    background-color:hsl(183, 100%, 15%);
+    display:flex;
+}
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
