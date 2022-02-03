@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container">
 
@@ -19,8 +21,17 @@
           <input type="number" placeholder="0">
         </div>
       </div>
-
+      
       <div class="tip">
+        <p>Select Tip %</p>
+        <div class="tip_container">
+          <button type="button" class="tip_btn" value="5">5%</button>
+          <button type="button" class="tip_btn" value="10">10%</button>
+          <button type="button" class="tip_btn" value="15">15%</button>
+          <button type="button" class="tip_btn" value="25">25%</button>
+          <button type="button" class="tip_btn" value="50">50%</button>
+          <input id="tip_input" class="input_tip" type="number" step='1' placeholder='Custom' min="0">
+        </div>
 
       </div>
 
@@ -34,10 +45,27 @@
 
     </div>
     <div class="right">
+      <div class="tip_amount_person">
+        <p>Tip Amount</p>
+        <p>/ person</p>
+        <label for="#" class="tip_amount_label">$0.00</label>
+      </div>
 
+      <div class="total_amount_person">
+        <p>Total</p>
+        <p>/ person</p>
+        <label for="#" class="total_amount_label">$0.00</label>
+      </div>
+
+      <div class="reset_button">
+        <a href="/index.html" class="reset_btn">
+          <input type="button" value="Reset" class="reset_btn">
+        </a>
+      </div>
     </div>
   </div>
 </body>
+
 </html>
 
 
@@ -48,18 +76,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <!-- displays site properly based on user's device -->
+<!-- displays site properly based on user's device -->
 
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Tip calculator app</title> -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
-  <!-- <link rel="stylesheet" href="/style.css">
+<!-- <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
@@ -103,7 +131,7 @@
 
   </div> -->
 
-  <!-- Bill
+<!-- Bill
 
   Select Tip %
   5%
