@@ -8,10 +8,12 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: #C4E0E9;
+    background-color: #00526d;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .container {
@@ -20,9 +22,10 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: white;
+    background-color: #7e8287;
     border-radius: 20px;
-    
+    /* box-shadow: 0 0 21px rgba(0, 0, 0, 0.5); */
+    box-shadow: inset 1px 1px 9px 9px rgb(0 0 0 / 50%);
 }
 
 .left_container {
@@ -30,7 +33,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around; 
     border-radius: 10px;
 }
 
@@ -69,13 +72,17 @@ body {
     color: hsl(0, 0%, 100%);
     cursor: pointer;
     font-size: 24px;
-    background-color: hsl(183, 100%, 15%);
+    background-color: #1e852d;
     text-align: center;
     width: 100px;
     padding: 7px 0;
     border: none;
     border-radius: 5px;
     transition: .1s;
+}
+
+.active, .tip_btn:hover {
+    background-color: #349fa5;
 }
 
 .input_tip {
@@ -144,7 +151,7 @@ input::-webkit-inner-spin-button {
 }
 
 label {
-    color: hsl(172, 67%, 45%);
+    color: #22d915b8;
     font-size: 35px;
     font-family: 'Space Mono', monospace;
     font-weight: bold;
@@ -157,14 +164,18 @@ label {
     top: 41%;
 }
 
+.reset_btn:hover {
+    background-color: rgba(11, 148, 1, 0.59);
+}
+
 .reset_btn {
     display:flex;
     justify-content: center;
     text-decoration: none;
     width: 100%;
     height: 37px;
-    background-color: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
+    background-color: #24b31a;
+    color: hsl(120, 9%, 85%);
     border: none;
     border-radius: 5px;
     font-size: 20px;
@@ -172,99 +183,29 @@ label {
     cursor: pointer;
 }
 
-
-/* * {
-    margin:0;
-    padding:0;
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .container {
+        height: 100vh;
+        width: 75vw;
+        flex-direction: column;
+    }
+    .tip_container {
+        justify-content: center;
+        column-gap: 10px;
+    }
+    label {
+        font-size: 25px;
+    }
+    #left {
+        width: 100%;
+        flex-direction: column;
+    }
+    .right {
+        width: 100%;
+        flex-direction: column
+    }
 }
 
-body {
-    width:100%;
-    height:100vh;
-    background-color:#f2f2f2;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.container {
-
-    width:800px;
-    height:400px;
-    display:flex;                                     
-}
-
-.left {
-    background-color:yellow;
-    width:50%;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-around;
-}
-
-.bill {
-width:100%;
-height:50px;
-
-}
-
-.input_container {
-    display:flex;
-    background-color:#f6f7fc;
-    align-items: center;
-    height:30px;
-}
-
-.input_container input {
-    background: none;
-    border: none;
-    outline: none;
-    text-align: end;
-    width: 100%;
-}
-
-.tip {
-width:100%;
-height:150px;
-background-color:beige;
-}
-
-.people {
-margin: 10px;
-}
-
-.right {
-    background-color:green;
-    width:50%;
-    height:100%;
-    background-color: hsl(183, 100%, 15%);
-
-}
-
-
-
-.tip_amount {
-    width:100%;
-    height:50px;
-    background-color:hsl(183, 100%, 15%);
-    display:flex;
-    border:none;
-    background-color:none;
-}
-
-.total {
-    width:100%;
-    height:50px;
-    background-color:hsl(183, 100%, 15%);
-    display:flex;
-}
-
-
-
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-} */
