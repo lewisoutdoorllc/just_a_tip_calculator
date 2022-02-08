@@ -12,13 +12,13 @@
 <body>
   <div class="container">
 
-    <div class="left">
+    <div id="left" class="left_container">
 
       <div class="bill">
         <p>Bill</p>
         <div class="input_container">
           <img src="./images/icon-dollar.svg" alt="Dollar Sign">
-          <input type="number" placeholder="0">
+          <input id="number_bill" type="number" placeholder="0">
         </div>
       </div>
       
@@ -39,7 +39,7 @@
         <p>Number of People</p>
         <div class="input_container">
           <img src="./images/icon-person.svg" alt="Avatar">
-          <input type="number" placeholder="0">
+          <input id="number_people" type="number" placeholder="0">
         </div>
       </div>
 
@@ -48,13 +48,13 @@
       <div class="tip_amount_person">
         <p>Tip Amount</p>
         <p>/ person</p>
-        <label for="#" class="tip_amount_label">$0.00</label>
+        <label id="tip_display" class="tip_amount_label">$0.00</label>
       </div>
 
       <div class="total_amount_person">
         <p>Total</p>
         <p>/ person</p>
-        <label for="#" class="total_amount_label">$0.00</label>
+        <label id="total_display" class="total_amount_label">$0.00</label>
       </div>
 
       <div class="reset_button">
@@ -64,8 +64,9 @@
       </div>
     </div>
   </div>
-</body>
 
+  <script src="script.js"></script>
+</body>
 </html>
 
 
